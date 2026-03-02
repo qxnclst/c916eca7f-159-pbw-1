@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('banner.jpg'); 
+    /* from xea (npm159): credits buat web ini for the background: (https://wallpapers-clan.com/desktop-wallpapers/pastel-star-glow-aesthetic/) */
+    background-size: cover;
+    background-position: center;
+    color: #d1b3ff;
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 2px solid #b19cd9;
+}
+
+nav {
+    background-color: #1a1a1a;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #b19cd9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    min-height: 400px;
+}
+
+.content {
+    flex: 2;
+    padding: 25px;
+    background-color: #121212;
+    border-radius: 15px;
+    border: 1px solid #b19cd9;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 25px;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    margin-left: 20px;
+    border-left: 3px solid #b19cd9;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #b19cd9;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #b19cd9; 
+    color: #000;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #d1b3ff;
+    box-shadow: 0 0 10px #b19cd9;
+}
+
+.inventory-list {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.inventory-list li {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    font-size: 1.1em;
+}
