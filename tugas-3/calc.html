@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulasi Nilai Mahasiswa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <! -- i love catppuccin AND comic neue :3 -- >
+</head>
+<body>
+    <div class="container">
+        <div class="input-section">
+            <h2>Cek Nilai</h2>
+
+            <div class="form-group">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" placeholder="Masukkan namamu">
+            </div>
+
+            <div class="form-group">
+                <label for="npm">NPM:</label>
+                <input type="number" id="npm" placeholder="Masukkan NPM kamu">
+            </div>
+
+             <div class="form-group">
+                <label for="nilai">Nilai:</label>
+                <input type="number" id="nilai" placeholder="Masukkan nilai (0-100)" min="0" max="100">
+            </div>
+
+            <button id="btnCek" class="btn">Cek Nilai!</button>
+        </div>
+
+        <div class="result-section">
+            <div id="hasil" class="result-box">
+                <p class="placeholder-text">Hasil akan muncul di sini</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
