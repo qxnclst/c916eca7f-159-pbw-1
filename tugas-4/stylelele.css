@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+/* LOVE COMIC NEUE FONT IT'S SO GOOFY */
+
+:root {
+    /* catppuccin mocha but kinda darker hehe gatau ah */
+    --bg-color: #0b0b12; 
+    --container-bg: #181825;
+    --text-color: #cdd6f4;
+    --accent-color: #cba6f7;
+    --border-color: #313244;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Comic Neue', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.struk-belanja {
+    background-color: var(--container-bg);
+    padding: 2rem 3rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    border: 2px solid var(--border-color);
+    min-width: 300px;
+}
+
+h2 {
+    color: var(--accent-color);
+    text-align: center;
+    margin-top: 0;
+    border-bottom: 2px dashed var(--border-color);
+    padding-bottom: 1rem;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.garis-total {
+    border-top: 2px dashed var(--border-color);
+    padding-top: 1rem;
+    margin-top: 1rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
