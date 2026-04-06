@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+/* minjem css dari tugas 4 tapi edit dikit */
+
+:root {
+    /* catppuccin mocha but kinda darker hehe */
+    --bg-color: #0b0b12; 
+    --container-bg: #181825;
+    --text-color: #cdd6f4;
+    --accent-color: #cba6f7;
+    --border-color: #313244;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Comic Neue', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: var(--container-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    width: 300px;
+}
+
+h2 {
+    color: var(--accent-color);
+    text-align: center;
+    margin-top: 0;
+    border-bottom: 2px dashed var(--border-color);
+    padding-bottom: 1rem;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: inherit;
+    transition: opacity 0.2s;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+.hasil {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px dashed var(--border-color);
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+p span {
+    font-weight: bold;
+    color: var(--accent-color);
+}
