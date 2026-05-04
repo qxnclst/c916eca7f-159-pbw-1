@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+/* styling buat tugas-10, diadaptasi dari tugas-6 */
+
+:root {
+    /* catppuccin mocha tapi agak lebih gelap dikit */
+    --bg-color: #0b0b12;
+    --container-bg: #181825;
+    --text-color: #cdd6f4;
+    --accent-color: #cba6f7;
+    --border-color: #313244;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'comic neue', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.container {
+    background-color: var(--container-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 900px;
+}
+
+h2 {
+    color: var(--accent-color);
+    text-align: center;
+    margin-top: 0;
+    border-bottom: 2px dashed var(--border-color);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    text-transform: lowercase;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.btn-tambah {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    padding: 8px 18px;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    border-radius: 6px;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: inherit;
+}
+
+th, td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    color: var(--accent-color);
+    font-weight: bold;
+    text-transform: lowercase;
+    border-bottom: 2px solid var(--border-color);
+}
+
+tr:hover {
+    background-color: rgba(203, 166, 247, 0.05);
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--accent-color);
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+button[type="submit"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: inherit;
+    transition: opacity 0.2s;
+}
+
+button[type="submit"]:hover,
+input[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+.aksi-link {
+    margin-right: 8px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+.alert-info {
+    background-color: rgba(203, 166, 247, 0.1);
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.btn-logout {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    margin-left: 8px;
+    padding: 8px 18px;
+    background-color: var(--border-color);
+    color: var(--text-color);
+    border-radius: 6px;
+    font-family: inherit;
+    font-weight: bold;
+}
